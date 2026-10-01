@@ -1,0 +1,213 @@
+/* GENERAL STYLING */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Subtle background image effect */
+    background-image: url('image.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+/* Headings styling hierarchy */
+/* h1: Main title (name) - Largest level */
+
+h1 {
+    font-size: 2.5rem; 
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #333; 
+}
+
+/* h2: Section headings (About, Skills, Projects, Contact) - Medium level */
+h2 {
+    font-size: 1.8rem; /* Medium size, smaller than h1 */
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #3578c5; 
+    text-align: center; 
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/* h3: Subsection headings ( project titles) - Smallest level */
+h3 {
+    font-size: 1.4rem; /* Smallest size for sub-levels */
+    font-weight: 600;
+    margin: 0 0 12px 0;
+    color: #333; 
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background: linear-gradient(
+        rgba(199, 126, 111, 0.6), 
+        rgba(126, 185, 221, 0.4)
+    );
+    color: black;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* MENU */
+.header-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.header-menu a {
+    display: flex;
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #2961a0;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.header-menu a:hover {
+    background-color:  rgba(199, 126, 111, 0.8);
+    color: rgb(252, 247, 247);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* SECTIONS */
+section {
+    width: 80%;
+    max-width: 1000px;
+    background-color: rgba(255, 255, 255, 0.92); 
+    padding: 35px;
+    margin: 25px 0;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: all 0.3s; 
+}
+
+/* Hover lift effect */
+section:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* ABOUT ME */
+#about p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.3rem;
+    font-style: italic;
+    margin-top: 0;
+}
+
+/* SKILLS */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+
+.skills-list li {
+    padding: 12px 25px;
+    border-radius: 15px;
+    background-color: rgba(74, 144, 226, 0.6);
+    color: rgb(14, 13, 13);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.skills-list li:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* PROJECTS */
+.project {
+    text-align: center;
+    padding: 25px;
+    margin: 15px 0;
+    border-top: 3px solid rgba(74, 144, 226, 0.8); 
+    border-bottom: 3px solid rgba(74, 144, 226, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.3s;
+}
+.project p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #222;
+}
+.underline {
+    text-decoration: underline dotted;
+    
+}
+.project:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* CONTACT SECTION - gradient applied to entire box */
+#contact {
+    background: linear-gradient(
+        rgba(126, 185, 221, 0.4),
+        rgba(199, 126, 111, 0.6)
+    );
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#contact p {
+    text-align: center;;
+    font-size: 1.3rem;
+}
+
+/* FLEX GAP FOR SECTIONS */
+body > section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    background: linear-gradient(
+        rgba(199, 126, 111, 0.6), 
+        rgba(126, 185, 221, 0.4)
+    );
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+    font-weight: 500;
+}
