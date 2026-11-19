@@ -2,7 +2,7 @@
 
 A simple, responsive personal portfolio website built with HTML5 and CSS3 as part of my Software Development bootcamp with Circuit Stream.
 
-**Live site:** https://lamiaeelhoudali.github.io/Portfolio/
+**Live site:** https://lamiaeelhoudali.github.io/Personal-website/
 
 ## Built With
 
